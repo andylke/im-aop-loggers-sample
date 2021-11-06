@@ -1,0 +1,21 @@
+im:
+  aop:
+    loggers:
+      enabled: true
+      entering-level: INFO
+      entering-message: "Entering [{method}] with parameters [{parameters}]"
+      exited-level: INFO
+      exited-message: "[{method}] exited normally with return value [{return-value}]"
+      exited-abnormally-level: ERROR
+      exited-abnormally-message: "[{method}] exited abnormally with exception [{exception}]"
+      ignore-exceptions:
+      - javax.validation.ConstraintViolationException
+      print-stack-trace: true
+      elapsed-level: INFO
+      elapsed-message: "[{method}] elapsed [{elapsed}]"
+      elapsed-warning-level: WARN
+      elapsed-warning-message: "[{method}] reached elapsed time limit [{elapsed-time-limit}]"
+
+logging:
+  level:
+    im.aop.loggers: DEBUG
