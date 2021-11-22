@@ -2,7 +2,7 @@ package im.aop.loggers.demo.bar;
 
 import org.springframework.stereotype.Service;
 
-import im.aop.loggers.advice.after.returning.LogAfterReturning;
+import im.aop.loggers.advice.afterreturning.LogAfterReturning;
 
 @Service
 public class BarService {

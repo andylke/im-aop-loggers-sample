@@ -5,7 +5,7 @@ import javax.validation.constraints.NotBlank;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import im.aop.loggers.advice.after.throwing.LogAfterThrowing;
+import im.aop.loggers.advice.afterthrowing.LogAfterThrowing;
 
 @Validated
 @Service
