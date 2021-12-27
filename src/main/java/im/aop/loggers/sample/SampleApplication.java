@@ -1,4 +1,4 @@
-package im.aop.loggers.demo;
+package im.aop.loggers.sample;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,23 +8,23 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
-import im.aop.loggers.demo.bar.Bar;
-import im.aop.loggers.demo.bar.BarService;
-import im.aop.loggers.demo.baz.Baz;
-import im.aop.loggers.demo.baz.BazService;
-import im.aop.loggers.demo.foo.Foo;
-import im.aop.loggers.demo.foo.FooService;
-import im.aop.loggers.demo.qux.Qux;
-import im.aop.loggers.demo.qux.QuxService;
+import im.aop.loggers.sample.bar.Bar;
+import im.aop.loggers.sample.bar.BarService;
+import im.aop.loggers.sample.baz.Baz;
+import im.aop.loggers.sample.baz.BazService;
+import im.aop.loggers.sample.foo.Foo;
+import im.aop.loggers.sample.foo.FooService;
+import im.aop.loggers.sample.qux.Qux;
+import im.aop.loggers.sample.qux.QuxService;
 
 @SpringBootApplication
 @EnableScheduling
-public class DemoApplication {
+public class SampleApplication {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(DemoApplication.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(SampleApplication.class);
 
   public static void main(String[] args) {
-    SpringApplication.run(DemoApplication.class, args);
+    SpringApplication.run(SampleApplication.class, args);
   }
 
   @Autowired private FooService fooService;

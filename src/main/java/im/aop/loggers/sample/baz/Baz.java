@@ -1,24 +1,24 @@
-package im.aop.loggers.demo.foo;
+package im.aop.loggers.sample.baz;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-public class Foo {
+public class Baz {
 
-  private String foo;
+  private String baz;
 
-  public Foo() {}
+  public Baz() {}
 
-  public Foo(String foo) {
-    this.foo = foo;
+  public Baz(String baz) {
+    this.baz = baz;
   }
 
-  public String getFoo() {
-    return foo;
+  public String getBaz() {
+    return baz;
   }
 
-  public void setFoo(String foo) {
-    this.foo = foo;
+  public void setBaz(String baz) {
+    this.baz = baz;
   }
 
   @Override

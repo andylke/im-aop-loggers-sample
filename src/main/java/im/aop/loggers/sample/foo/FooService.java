@@ -1,4 +1,4 @@
-package im.aop.loggers.demo.foo;
+package im.aop.loggers.sample.foo;
 
 import org.springframework.stereotype.Service;
 

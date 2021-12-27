@@ -1,4 +1,4 @@
-package im.aop.loggers.demo.bar;
+package im.aop.loggers.sample.bar;
 
 import org.springframework.stereotype.Service;
 

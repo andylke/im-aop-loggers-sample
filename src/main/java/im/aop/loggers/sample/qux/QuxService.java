@@ -1,4 +1,4 @@
-package im.aop.loggers.demo.qux;
+package im.aop.loggers.sample.qux;
 
 import org.springframework.stereotype.Service;
 

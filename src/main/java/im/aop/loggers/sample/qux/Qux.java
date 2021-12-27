@@ -1,24 +1,24 @@
-package im.aop.loggers.demo.baz;
+package im.aop.loggers.sample.qux;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-public class Baz {
+public class Qux {
 
-  private String baz;
+  private String qux;
 
-  public Baz() {}
+  public Qux() {}
 
-  public Baz(String baz) {
-    this.baz = baz;
+  public Qux(String qux) {
+    this.qux = qux;
   }
 
-  public String getBaz() {
-    return baz;
+  public String getQux() {
+    return qux;
   }
 
-  public void setBaz(String baz) {
-    this.baz = baz;
+  public void setQuz(String qux) {
+    this.qux = qux;
   }
 
   @Override

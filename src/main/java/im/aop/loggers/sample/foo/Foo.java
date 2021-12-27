@@ -1,24 +1,24 @@
-package im.aop.loggers.demo.qux;
+package im.aop.loggers.sample.foo;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-public class Qux {
+public class Foo {
 
-  private String qux;
+  private String foo;
 
-  public Qux() {}
+  public Foo() {}
 
-  public Qux(String qux) {
-    this.qux = qux;
+  public Foo(String foo) {
+    this.foo = foo;
   }
 
-  public String getQux() {
-    return qux;
+  public String getFoo() {
+    return foo;
   }
 
-  public void setQuz(String qux) {
-    this.qux = qux;
+  public void setFoo(String foo) {
+    this.foo = foo;
   }
 
   @Override

@@ -1,4 +1,4 @@
-package im.aop.loggers.demo.bar;
+package im.aop.loggers.sample.bar;
 
 public class Bar {
 

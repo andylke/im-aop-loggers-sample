@@ -1,4 +1,4 @@
-package im.aop.loggers.demo.baz;
+package im.aop.loggers.sample.baz;
 
 import javax.validation.constraints.NotBlank;
 
