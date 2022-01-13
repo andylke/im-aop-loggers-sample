@@ -16,6 +16,12 @@ im:
       elapsed-warning-level: WARN
       elapsed-warning-message: "[{method}] reached elapsed time limit [{elapsed-time-limit}]"
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 logging:
   level:
     im.aop.loggers: DEBUG
