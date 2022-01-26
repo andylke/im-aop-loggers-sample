@@ -16,8 +16,8 @@ im:
       elapsed-warning-level: WARN
       elapsed-warning-message: "[{method}] reached elapsed time limit [{elapsed-time-limit}]"
       reflection-to-string:
-        base-packages:
-        - im.aop.loggers.sample.qux
+        base-classes:
+        - im.aop.loggers.sample.qux.Qux
         exclude-null-values: true
         exclude-field-names:
         - username
