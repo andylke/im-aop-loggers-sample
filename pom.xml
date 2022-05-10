@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.andylke</groupId>
 	<artifactId>im-aop-loggers-sample</artifactId>
-	<version>1.0.7</version>
+	<version>1.0.8</version>
 	<properties>
 		<java.version>11</java.version>
     <im-aop-loggers.version>${project.version}</im-aop-loggers.version>
