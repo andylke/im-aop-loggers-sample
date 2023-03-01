@@ -9,7 +9,7 @@ im:
       exited-abnormally-level: ERROR
       exited-abnormally-message: "[{method}] exited abnormally with exception [{exception}]"
       ignore-exceptions:
-      - javax.validation.ConstraintViolationException
+      - jakarta.validation.ConstraintViolationException
       print-stack-trace: true
       elapsed-level: INFO
       elapsed-message: "[{method}] elapsed [{elapsed}]"

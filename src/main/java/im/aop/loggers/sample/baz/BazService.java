@@ -1,6 +1,6 @@
 package im.aop.loggers.sample.baz;
 
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
 
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
