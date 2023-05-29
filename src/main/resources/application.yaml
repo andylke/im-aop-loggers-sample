@@ -9,7 +9,7 @@ im:
       exited-abnormally-level: ERROR
       exited-abnormally-message: "[{method}] exited abnormally with exception [{exception}]"
       ignore-exceptions:
-      - javax.validation.ConstraintViolationException
+        - jakarta.validation.ConstraintViolationException
       print-stack-trace: true
       elapsed-level: INFO
       elapsed-message: "[{method}] elapsed [{elapsed}]"
@@ -17,13 +17,13 @@ im:
       elapsed-warning-message: "[{method}] reached elapsed time limit [{elapsed-time-limit}]"
       reflection-to-string:
         base-classes:
-        - im.aop.loggers.sample.qux.Qux
+          - im.aop.loggers.sample.qux.Qux
         exclude-null-values: true
         exclude-field-names:
-        - username
-        - password
-        - passphrase
-        - secret
+          - username
+          - password
+          - passphrase
+          - secret
 
 management:
   endpoints:
