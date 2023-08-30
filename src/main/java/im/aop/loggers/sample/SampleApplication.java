@@ -1,5 +1,7 @@
 package im.aop.loggers.sample;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,8 @@ import im.aop.loggers.sample.baz.Baz;
 import im.aop.loggers.sample.baz.BazService;
 import im.aop.loggers.sample.foo.Foo;
 import im.aop.loggers.sample.foo.FooService;
+import im.aop.loggers.sample.fred.Fred;
+import im.aop.loggers.sample.fred.FredService;
 import im.aop.loggers.sample.qux.Qux;
 import im.aop.loggers.sample.qux.QuxService;
 
@@ -34,6 +38,8 @@ public class SampleApplication {
   @Autowired private BazService bazService;
 
   @Autowired private QuxService quxService;
+
+  @Autowired private FredService fredService;
 
   @Scheduled(initialDelay = 1000, fixedDelay = 15000)
   void runDemo() {
@@ -59,5 +65,8 @@ public class SampleApplication {
 
     final Qux qux = quxService.accept(new Qux("abc"));
     LOGGER.info("QuxService.accept(Qux) returned [{}]", qux);
+
+    final List<Fred> freds = fredService.accept("fred");
+    LOGGER.info("FredService.accept(\"fred\") returned [{}]", freds);
   }
 }

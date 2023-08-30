@@ -8,8 +8,8 @@ import im.aop.loggers.messageinterpolation.ToStringStrategy;
 public class BarToStringStrategy implements ToStringStrategy {
 
   @Override
-  public boolean supports(Class<?> type) {
-    return type == Bar.class;
+  public boolean supports(Object object) {
+    return object instanceof Bar;
   }
 
   @Override
