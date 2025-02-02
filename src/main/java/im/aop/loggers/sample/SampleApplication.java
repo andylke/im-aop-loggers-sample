@@ -1,15 +1,5 @@
 package im.aop.loggers.sample;
 
-import java.util.List;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
-
 import im.aop.loggers.sample.bar.Bar;
 import im.aop.loggers.sample.bar.BarService;
 import im.aop.loggers.sample.baz.Baz;
@@ -20,6 +10,14 @@ import im.aop.loggers.sample.fred.Fred;
 import im.aop.loggers.sample.fred.FredService;
 import im.aop.loggers.sample.qux.Qux;
 import im.aop.loggers.sample.qux.QuxService;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 
 @SpringBootApplication
 @EnableScheduling
@@ -66,7 +64,10 @@ public class SampleApplication {
     final Qux qux = quxService.accept(new Qux("abc"));
     LOGGER.info("QuxService.accept(Qux) returned [{}]", qux);
 
-    final List<Fred> freds = fredService.accept("fred");
+    final List<Fred> freds = fredService.findAllByName("fred");
     LOGGER.info("FredService.accept(\"fred\") returned [{}]", freds);
+
+    fredService.save(freds.get(0));
+    fredService.saveAndThrow(freds.get(0));
   }
 }
